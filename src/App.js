@@ -6,7 +6,9 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 
 import About from './pages/About';
-
+import Skills from './pages/Skills'; 
+import Portfolio from './pages/Portfolio'; 
+import Smedia from './pages/Smedia'; 
 
 const App = () => {
   return (
@@ -15,12 +17,10 @@ const App = () => {
       <Navigation />
 
       <About /> 
-
-
-      <h1>Hello!</h1>
-      <h2>Hello 2</h2>
-      <p>dddd</p>
-      <span>Spaan</span>
+      <Skills />
+      <Portfolio />
+      <Smedia />
+   
     </Fragment>
   );
 };
@@ -28,6 +28,14 @@ const App = () => {
 export default App;
 
 /*
+
+
+   <h1>Hello!</h1>
+      <h2>Hello 2</h2>
+      <p>dddd</p>
+      <span>Spaan</span>
+
+
 
       <Browser>
         <Navigation />

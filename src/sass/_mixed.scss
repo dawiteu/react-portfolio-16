@@ -21,6 +21,12 @@ html{
 }
 
 section.content{
+    // margin-top:10vh; // padding? 
     padding-top:10vh;
     min-height:100vh;
+    border-bottom:1px dashed blue;
+
+    &#smedia{
+        max-height: 60vh!important;
+    }
 }
