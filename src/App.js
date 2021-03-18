@@ -20,7 +20,7 @@ const App = () => {
       <Skills />
       <Portfolio />
       <Smedia />
-   
+      
     </Fragment>
   );
 };

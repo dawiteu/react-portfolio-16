@@ -22,11 +22,24 @@ html{
 
 section.content{
     // margin-top:10vh; // padding? 
-    padding-top:10vh;
+    // padding-top:14vh;
     min-height:100vh;
     border-bottom:1px dashed blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
 
     &#smedia{
         max-height: 60vh!important;
+        background-color: #0E1428;
+    }
+
+
+
+    .cont{
+        width:85%;
+        min-height:50vh; 
+        // background-color: red;
     }
 }

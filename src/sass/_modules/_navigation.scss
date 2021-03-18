@@ -6,6 +6,8 @@ nav{
     justify-content: space-between;
     position:sticky;
     top:0%;
+    border-bottom: 1px solid #2d2d2d;
+    box-shadow: 0px 0px 11px 1px #2d2d2d;
     >a{
         padding:25px;
         text-decoration: none;
@@ -30,12 +32,26 @@ nav{
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #f6d0b1;
-                border-right:1px solid #ccc;
+                // background-color: #f6d0b1;
+                // border-right:1px solid #ccc;
+                position:relative;
                 &:hover{
                     background-color: #0E1428;
                     cursor:pointer;
                     color:white;
+                }
+                &.active{
+                    background-color: #0E1428;
+                    color:white;
+                }
+                &::before{
+                    content:'';
+                    width:1px;
+                    height:90%;
+                    background-color:#ccc;
+                    position:absolute;
+                    // left:-1%;
+                    left:0px;
                 }
             }
         }
