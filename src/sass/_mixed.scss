@@ -1,0 +1,17 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    font-family:'TajawalL', sans-serif;
+}
+*::selection{
+    color:red;
+    background-color: black;
+}
+.red{
+    color:red;
+}
+
+.bold{
+    font-weight: bold;
+}
