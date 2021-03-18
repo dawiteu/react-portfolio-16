@@ -39,10 +39,17 @@ nav{
                     background-color: #0E1428;
                     cursor:pointer;
                     color:white;
+                    &::before{
+                        width:0px;
+                    }
                 }
                 &.active{
                     background-color: #0E1428;
                     color:white;
+
+                    &::before{
+                        width:0px;
+                    }
                 }
                 &::before{
                     content:'';
