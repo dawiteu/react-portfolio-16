@@ -4,8 +4,37 @@ nav{
     background-color: azure;
     display:flex;
     justify-content: space-between;
+    position:sticky;
+    top:0%;
     >a{
+        padding:25px;
         text-decoration: none;
         background-color: #0E1428;
+        color:white;
+    }
+
+    >ul{
+        width:60%;
+        display:flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li{
+            width:100%;
+            background-color: red;
+            border:1px dashed blue;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        // background-color: yellow;
+        >ul{
+            width:70%;
+        }
     }
 }

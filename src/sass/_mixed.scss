@@ -8,10 +8,19 @@
     color:red;
     background-color: black;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 .red{
     color:red;
 }
 
 .bold{
     font-weight: bold;
+}
+
+section.content{
+    padding-top:10vh;
+    min-height:100vh;
 }
