@@ -34,6 +34,11 @@ const Skills = () => {
                                 <dd>ReactJS</dd>
                             </div>
 
+                            <div className="compet">
+                                <dt><i className="fab fa-bootstrap fa-3x"></i></dt>
+                                <dd>Bootstrap</dd>
+                            </div>
+
                         </div>
                         <h3 className="title">&#125; </h3>
                     </div>
