@@ -10,22 +10,22 @@ const Navigation = () => {
 
             <ul>
                 <li>
-                    <Link to="about" delay={0} offset={-100} spy={true} smooth={true}>
+                    <Link to="about" delay={0} offset={0} spy={true} smooth={true}>
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to="skills" delay={0} offset={-100} spy={true} smooth={true}>
+                    <Link to="skills" delay={0} offset={0} spy={true} smooth={true}>
                         Skills
                     </Link>
                 </li>
                 <li>
-                    <Link to="portfolio" delay={0} offset={-100} spy={true} smooth={true}>
+                    <Link to="portfolio" delay={0} offset={0} spy={true} smooth={true}>
                         Portfolio
                     </Link>
                 </li>
                 <li>
-                    <Link to="smedia" delay={0}  offset={-100} spy={true} smooth={true}>
+                    <Link to="smedia" delay={0}  offset={0} spy={true} smooth={true}>
                         Media
                     </Link>
                 </li>
