@@ -3,6 +3,94 @@
         // font-size:2em;
         &:hover{
             color:red;
+            &.fa-html5{
+                color:#F16529;
+            }
+            &.fa-css3-alt{
+                color:#2965f1;
+            }
+            &.fa-js-square{
+                color: #f0db4f;
+                //color: linear-gradient(90deg, rgba(240,219,79,1) 50%, rgba(50,51,48,1) 50%);
+            }
+            &.fa-sass{
+                color:#c69;
+            }
+            &.fa-react{
+                color:#61DBFB;
+            }
+
+            &.fa-php{
+                color:#787CB5;
+            }
+
+            &.fa-database{
+                color:#F29111;
+            }
+
+            &.fa-github{
+                color:#4078c0; 
+            }
+
+
+        }
+    }
+    .cont{
+        .row{
+            display:flex; 
+            .col{
+                width:95%; 
+                margin:1%; 
+                //background-color: lime;
+                //border:1px solid black;
+
+                h3{
+                    text-align:center;
+                }
+                &:not(:first-child){
+                    border-top:none;
+                    border-left:1px solid rgb(182, 182, 182); 
+                }
+
+                .compets{
+                    display:flex; 
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    
+                    .compet{
+                        width:33%;
+                        text-align: center;
+                        padding:5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    #skills{
+        .cont{
+            .row{
+                flex-direction: column;
+                .col{
+                    .compets{
+                        display:flex; 
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                    }
+                    //background-color: green;
+                    h3{
+                        padding:5%;
+                    }
+                    &:not(:first-child){
+                        margin-top:5%;
+                        margin-bottom:5%;
+                        border-left:none;
+                        border-top:1px solid rgb(182, 182, 182);  
+                    }
+                }
+            }
         }
     }
 }
