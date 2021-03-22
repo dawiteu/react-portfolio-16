@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll'; 
-
+import { BrowserRouter as Router, NavLink } from 'react-router-dom'; 
 
 const Navigation = () => {
 
@@ -9,6 +9,8 @@ const Navigation = () => {
             <a href="###" className="bold">Dawid Tararuj</a>
 
             <ul>
+                <Router>
+                
                 <li>
                     <Link to="about" delay={0} offset={0} spy={true} smooth={true}>
                         About
@@ -30,8 +32,11 @@ const Navigation = () => {
                     </Link>
                 </li>
                 <li>
-                    Contact
+                    <NavLink to ="/contact" exact activeClassName="active">
+                        Contact
+                    </NavLink>
                 </li>
+                </Router>
             </ul>
         </nav>
     );

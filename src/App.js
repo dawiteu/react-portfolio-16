@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-//import { BrowserRouter as Browser, Switch, Route} from 'react-router-dom'; 
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 //import ReactPageScroller from 'react-page-scroller';
 
 import Header from './components/Header'; 
@@ -9,18 +9,31 @@ import About from './pages/About';
 import Skills from './pages/Skills'; 
 import Portfolio from './pages/Portfolio'; 
 import Smedia from './pages/Smedia'; 
+import Contact from './pages/Contact'; 
+
 
 const App = () => {
   return (
     <Fragment>
+      
       <Header />
+
       <Navigation />
 
-      <About /> 
-      <Skills />
-      <Portfolio />
-      <Smedia />
-      
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <About /> 
+            <Skills />
+            <Portfolio />
+            <Smedia />
+          </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+        </Switch>
+      </Router>
+
     </Fragment>
   );
 };
