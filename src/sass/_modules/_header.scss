@@ -11,18 +11,6 @@ header{
     background-color: #000;
     opacity:1;
     &::before{
-        /*
-        content:'';
-        z-index:1;
-        position:absolute;
-        background-image: url("../../assets/imgs/pexels-bg.jpg");
-        background-attachment: fixed;
-        filter:blur(3px);
-        -webkit-filter: blur(3px);
-        animation:bgfillup 150s 5s infinite, scalebg 30s infinite linear, imgopacity 60s 4s infinite linear; 
-        opacity:0.5;*/
-
-            // content:url('../img/pexels-bg.jpg');
     content:""; 
     width:100%;
     opacity:0.5;
@@ -40,14 +28,12 @@ header{
     h1{
         z-index:2;
         color:white;
-        font-size:4rem;
+        font-size:3.5rem;
         text-shadow: 0px 0px 3px white;
     }
     h4{
         color:#ccc;
         z-index:2;
-        // margin-top:5%;
-        padding:10px;
     }
 }
 

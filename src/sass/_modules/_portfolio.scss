@@ -48,3 +48,18 @@
         }
     }
 }
+
+@media screen and (max-width: 950px){
+    #portfolio{
+        div.cont{
+            display:flex;
+            flex-direction: column;
+            //justify-content: center;
+            //flex-wrap: wrap;
+        
+            div.project{
+                width:100%;
+            }
+        }
+    }
+} 
