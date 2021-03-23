@@ -1,46 +1,29 @@
 #skills{
+    padding-top:5%;
+    min-height:30vh; 
+    height:auto!important;
+    // border-bottom:1px solid red;
     i{
-        // font-size:2em;
-        //&:hover{
-            color:red;
-            &.fa-html5{
-                color:#F16529;
-            }
-            &.fa-css3-alt{
-                color:#2965f1;
-            }
-            &.fa-js-square{
-                color: #f0db4f;
-                //color: linear-gradient(90deg, rgba(240,219,79,1) 50%, rgba(50,51,48,1) 50%);
-            }
-            &.fa-sass{
-                color:#c69;
-            }
-            &.fa-react{
-                color:#61DBFB;
-            }
-
-            &.fa-php{
-                color:#787CB5;
-            }
-
-            &.fa-database{
-                color:#F29111;
-            }
-
-            &.fa-github{
-                color:#4078c0; 
-            }
-            &.fa-bootstrap{
-                color:#563d7c;
-            }
-
-
+        //color:red;
+            &.fa-html5{     color:#F16529;   }
+            &.fa-css3-alt{  color:#2965f1;   }
+            &.fa-js-square{ color: #f0db4f;  }
+            &.fa-sass{      color:#c69;      }
+            &.fa-react{     color:#61DBFB;   }
+            &.fa-php{       color:#787CB5;   }
+            &.fa-database{  color:#F29111;   }
+            &.fa-github{    color:#4078c0;   }
+            &.fa-bootstrap{ color:#563d7c;   }
         //}
     }
     .cont{
+        // background-color: red;
+        display:flex;
+        align-items: center;
         .row{
-            display:flex; 
+            width:100%;
+            // border:1px solid black;
+            display:flex;
             .col{
                 width:95%; 
                 margin:1%; 

@@ -9,9 +9,8 @@
     background-color: black;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+//html{ scroll-behavior: smooth; }
+
 .red{
     color:red;
 }
@@ -24,7 +23,7 @@ section.content{
     // margin-top:10vh; // padding? 
     // padding-top:14vh;
     min-height:100vh;
-    border-bottom:1px dashed blue;
+    // border-bottom:1px dashed blue;
     display:flex;
     align-items: center;
     justify-content: center;

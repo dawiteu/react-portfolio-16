@@ -33,31 +33,34 @@ const App = () => {
     break;
   }
 
-  useEffect(() => {
-    console.log(page);
-  }, [page])
-  return (
-    <Fragment>
-      {display ? " oui" : "non"}
-      <Header />
-    {console.log('page')}
-      <Navigation />
 
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            {/* <Index />  */}
+  const compIndex = () =>{ 
+      return (
+        <Fragment>
             <About /> 
             <Skills />
             <Portfolio />
             <Smedia />
-          </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
+        </Fragment>
+      );
+  }
+
+  useEffect(() => {
+    console.log(page);
+  }, [page])
+
+
+
+  return (
+    <Fragment>
+      <Router>
+      <Header />
+      <Navigation />
+        <Switch>
+            <Route path="/" exact component={compIndex} />
+            <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
-
     </Fragment>
   );
 };

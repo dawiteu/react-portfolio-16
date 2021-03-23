@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 
 import About from './About';
@@ -8,12 +8,12 @@ import Smedia from './Smedia';
 
 const Index = () => {
     return (
-        <div>
+        <Fragment>
             <About /> 
             <Skills />
             <Portfolio />
             <Smedia />
-        </div>
+        </Fragment>
     );
 };
 

@@ -1,5 +1,7 @@
 #about{
-    background-color: azure;
+    // background-color: #f0ffff;
+    background: rgb(240,255,255);
+    background: linear-gradient(180deg, rgba(240,255,255,1) 90%, rgba(204,204,204,1) 100%);
     text-align:center; 
     h2{
         padding:15px;
