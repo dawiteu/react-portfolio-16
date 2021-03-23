@@ -1,11 +1,11 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 //import ReactPageScroller from 'react-page-scroller';
 
 import Header from './components/Header'; 
 import Navigation from './components/Navigation';
 
-import Index from './pages/Index'; 
+//import Index from './pages/Index'; 
 
 import About from './pages/About';
 import Skills from './pages/Skills'; 
@@ -13,26 +13,7 @@ import Portfolio from './pages/Portfolio';
 import Smedia from './pages/Smedia'; 
 import Contact from './pages/Contact'; 
 
-
 const App = () => {
-
-  const [page,setPage] = useState(['/','/contact']);
-
-  let display; 
-
-  const disp = content => { 
-    display = content; 
-  }
-
-  switch(page){
-    default: case '/':
-      console.log('def');
-    break;
-    case '/contact':
-      console.log('contact');
-    break;
-  }
-
 
   const compIndex = () =>{ 
       return (
@@ -46,10 +27,8 @@ const App = () => {
   }
 
   useEffect(() => {
-    console.log(page);
-  }, [page])
-
-
+    console.log('page');
+  }, []);
 
   return (
     <Fragment>

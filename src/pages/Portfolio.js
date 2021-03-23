@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import chef from "../assets/imgs/site_chef.png";
 import empo from "../assets/imgs/site_emporium.png"; 
