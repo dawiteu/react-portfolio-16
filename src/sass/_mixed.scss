@@ -9,36 +9,33 @@
     background-color: black;
 }
 
-//html{ scroll-behavior: smooth; }
-
 .red{
     color:red;
 }
-
+.center{
+    text-align: center;
+}
 .bold{
     font-weight: bold;
 }
 
 section.content{
-    // margin-top:10vh; // padding? 
-    // padding-top:14vh;
     min-height:100vh;
-    // border-bottom:1px dashed blue;
     display:flex;
     align-items: center;
     justify-content: center;
-
-
-    &#smedia{
-        max-height: 60vh!important;
-        background-color: #0E1428;
+    border-bottom:2px dashed blue;
+    &#contact{
+        min-height: 100vh!important;
+        background-color: #0E1428; 
+        flex-direction: column;
     }
-
-
-
     .cont{
         width:85%;
-        min-height:50vh; 
-        // background-color: red;
+        min-height:40vh;
+        display:flex;
+        background-color: red;
+        flex-direction: column;
+        margin:2%;
     }
 }

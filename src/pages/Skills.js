@@ -2,8 +2,13 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <section className="content" id="skills">
+        <section className="content" id="skills"> 
             <div className="cont">
+                <h3>Mes connaissances</h3>
+                <p className="center">
+                    Mes connaissances ne sont pas définie par un pourcentage ni un nombre d'étoiles. <br/> Un language est acquis à partir du moment où j'ai compris sa
+                    logique et que je m'y débrouille. 
+                </p>
                 <div className="row">
                     <div className="col">
                         <h3 className="title">Front &#123; </h3>
@@ -93,24 +98,6 @@ const Skills = () => {
 
                     </div>
                 </div>
-
-
-                {
-
-                /*
-                HTML :<i className="fab fa-html5 fa-3x"></i>
-                CSS : <i className="fab fa-css3-alt fa-3x"></i>
-                JS: <i className="fab fa-js-square fa-3x"></i>
-                SASS: <i className="fab fa-sass fa-3x"></i>
-                React : <i className="fab fa-react fa-3x"></i>
-                <br/> 
-                PHP: <i className="fab fa-php fa-3x"></i>
-                MySQL: : <i className="fas fa-database fa-3x"></i>
-                <br/>
-                BASH: <i className="fas fa-terminal fa-3x"></i>
-                GitHUB: <i className="fab fa-github fa-3x"></i>
-                */
-                }
             </div>
         </section>
     );

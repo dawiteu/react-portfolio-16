@@ -21,7 +21,7 @@ const App = () => {
             <About /> 
             <Skills />
             <Portfolio />
-            <Smedia />
+            <Contact />
         </Fragment>
       );
   }
@@ -32,12 +32,12 @@ const App = () => {
 
   return (
     <Fragment>
-      <Router>
       <Header />
+      <Router>
       <Navigation />
         <Switch>
-            <Route path="/" exact component={compIndex} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/" component={compIndex} />
+            <Route exact path="/contact" component={Contact} />
         </Switch>
       </Router>
     </Fragment>

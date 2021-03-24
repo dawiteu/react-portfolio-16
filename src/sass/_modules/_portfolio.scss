@@ -5,10 +5,12 @@
         flex-wrap: wrap;
     
         div.project{
-            width:27%; 
+            width:23%; 
+            // flex: 1 0 auto;
             height:auto;
+            max-height:200px;
             background-color: #2D2D2D;
-            margin:2%;
+            margin:1%;
             position:relative;
             overflow: hidden;
             .desc{
@@ -19,11 +21,15 @@
                 left:50%;
                 transform: translate(-50%,-50%);
                 transition: opacity 1s;
+                text-align:center;
+                margin:0 auto;
+                text-shadow:1px 1px 3px #000;
                 button{
                     display:block;
                     padding:10px; 
                     background: none!important;
                     border:1px solid white;
+                    margin:0 auto;
                 }
             }
             
@@ -37,6 +43,7 @@
             &:hover{
                 img{
                     transform: rotate(-30deg) scale(2.0);
+                    filter: blur(1px);
                 }
                 .desc{
                     opacity:1;
@@ -48,17 +55,27 @@
         }
     }
 }
+@media screen and (min-width: 951px) and (max-width: 1200px ){
+    #portfolio{
+        div.cont{
+            // background-color: yellow;
+            div.project{
+                width:50%;
+                flex: 0 1 45%;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 950px){
     #portfolio{
         div.cont{
             display:flex;
             flex-direction: column;
-            //justify-content: center;
-            //flex-wrap: wrap;
-        
+
             div.project{
-                width:100%;
+                width:50%;
+                // flex:1 0 auto;
             }
         }
     }

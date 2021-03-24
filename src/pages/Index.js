@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import About from './About';
 import Skills from './Skills'; 
 import Portfolio from './Portfolio'; 
-import Smedia from './Smedia'; 
+import Contact from './Contact'; 
 
 const Index = () => {
     return (
@@ -12,7 +12,7 @@ const Index = () => {
             <About /> 
             <Skills />
             <Portfolio />
-            <Smedia />
+            <Contact />
         </Fragment>
     );
 };

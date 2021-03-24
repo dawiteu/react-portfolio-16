@@ -1,35 +1,28 @@
 #skills{
-    padding-top:5%;
-    min-height:30vh; 
-    height:auto!important;
-    // border-bottom:1px solid red;
-    i{
-        //color:red;
-            &.fa-html5{     color:#F16529;   }
-            &.fa-css3-alt{  color:#2965f1;   }
-            &.fa-js-square{ color: #f0db4f;  }
-            &.fa-sass{      color:#c69;      }
-            &.fa-react{     color:#61DBFB;   }
-            &.fa-php{       color:#787CB5;   }
-            &.fa-database{  color:#F29111;   }
-            &.fa-github{    color:#4078c0;   }
-            &.fa-bootstrap{ color:#563d7c;   }
-        //}
+    // padding-top:5%;
+    min-height:60vh; 
+    height:auto;
+    flex-direction: column;
+    i{//color:red;
+        &.fa-html5{     color:#F16529;   }
+        &.fa-css3-alt{  color:#2965f1;   }
+        &.fa-js-square{ color: #f0db4f; background-color: #000; border-radius:10%; }
+        &.fa-sass{      color:#c69;      }
+        &.fa-react{     color:#61DBFB;   }
+        &.fa-php{       color:#787CB5;   }
+        &.fa-database{  color:#F29111;   }
+        &.fa-github{    color:#4078c0;   }
+        &.fa-bootstrap{ color:#563d7c;   }
     }
     .cont{
-        // background-color: red;
         display:flex;
         align-items: center;
         .row{
             width:100%;
-            // border:1px solid black;
             display:flex;
             .col{
                 width:95%; 
                 margin:1%; 
-                //background-color: lime;
-                //border:1px solid black;
-
                 h3{
                     text-align:center;
                 }
@@ -37,7 +30,6 @@
                     border-top:none;
                     border-left:1px solid rgb(182, 182, 182); 
                 }
-
                 .compets{
                     display:flex; 
                     flex-wrap: wrap;
@@ -56,6 +48,9 @@
 
 @media screen and (max-width: 950px){
     #skills{
+        p{
+            margin:2%;
+        }
         .cont{
             .row{
                 flex-direction: column;
@@ -65,7 +60,6 @@
                         flex-wrap: nowrap;
                         justify-content: center;
                     }
-                    //background-color: green;
                     h3{
                         padding:5%;
                     }
