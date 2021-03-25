@@ -3,8 +3,9 @@ import React from 'react';
 const Skills = () => {
     return (
         <section className="content" id="skills"> 
+            <h2 className="title">ACQUIS:</h2>
             <div className="cont">
-                <h3>Mes connaissances</h3>
+                {/* <h3>Mes connaissances</h3> */}
                 <p className="center">
                     Mes connaissances ne sont pas définie par un pourcentage ni un nombre d'étoiles. <br/> Un language est acquis à partir du moment où j'ai compris sa
                     logique et que je m'y débrouille. 

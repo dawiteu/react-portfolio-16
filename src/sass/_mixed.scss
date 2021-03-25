@@ -25,6 +25,11 @@ section.content{
     align-items: center;
     justify-content: center;
     // border-bottom:2px dashed blue;
+    flex-direction: column;
+    h2.title{
+        text-align: center;
+        text-decoration: underline;
+    }
     @media screen and (max-width: 950px){ min-height:120vh; }
     &#contact{
         background-color: #0E1428; 

@@ -40,9 +40,11 @@ const Portfolio = () => {
 
     return (
         <section className="content" id="portfolio">
+            <h2 className="title">PROJETS:</h2>
             {/* <h1>Portfolio</h1> <img src={chef} alt="marche pas" />*/}
 
             <div className="cont" style={style}>
+                
                 {
                     projet.map((el, i) => {
                         const color = el.dark ? darkmode : lightmode; 

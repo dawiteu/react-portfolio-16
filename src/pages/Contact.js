@@ -1,15 +1,8 @@
 import React from 'react';
-import photocv from "../assets/imgs/cv_screen.png";
-
-
-var Scroll = require('react-scroll');
-var scroll = Scroll.animateScroll;
+import photocv from "../assets/imgs/cv_screen1.png";
 
 
 const Contact = () => {
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    }
 
     return (
         <section className="content" id="contact">

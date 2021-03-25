@@ -3,6 +3,7 @@ import photo from '../assets/imgs/dawit1.jpg';
 const About = () => {
     return (
         <section className="content" id="about">
+            {/* <h2 className="title">Je me présente:</h2> */}
             <div className="cont row">
 
                     <div className="col">
