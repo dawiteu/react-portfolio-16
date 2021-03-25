@@ -121,3 +121,49 @@
     }
 
 }
+
+@media screen and (max-width: 950px){
+    #contact{
+        div.cont{
+            div.row{
+                display:flex;
+                flex-wrap: wrap;
+                div.col{
+                    display:flex;
+                    flex-wrap: wrap;
+                    &.f-1{
+                        flex:0 1 auto !important;
+                        width:50%;
+                        flex:1;
+                        .project{
+                            width:100%;
+                        }
+                    }
+                    &.f-2{
+                        flex:1;
+                    }
+                    &.f-4{
+                        flex:4;
+                        flex: 0 1 auto!important;
+                    }
+                    >.row{
+                        width:100%;
+                        background-color: pink;
+                        flex:0 1 auto !important;
+                        display:flex;
+                        flex-wrap: nowrap;
+                        .col{
+                            &:first-child{
+                                width:max-content;
+                                background: #000;
+                            }
+                            &:last-child{
+                                background-color: green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

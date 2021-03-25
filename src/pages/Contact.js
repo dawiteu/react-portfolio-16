@@ -24,6 +24,7 @@ const Contact = () => {
                                 <img src={photocv} alt="photo" />
                             </div>
                         </div>
+                        
                         <div className="col f-2">
 
                                 <div className="row">
