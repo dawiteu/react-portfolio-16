@@ -27,31 +27,31 @@ const Contact = () => {
                         <div className="col f-2">
 
                                 <div className="row">
-                                    <div className="col"> <i class="fas fa-phone-alt"></i></div>
+                                    <div className="col"> <i className="fas fa-phone-alt"></i></div>
                                     <div className="col"> <a href="#">0484 11 22 33</a> </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col"> <i class="fas fa-at"></i> </div>
+                                    <div className="col"> <i className="fas fa-at"></i> </div>
                                     <div className="col"> <a href="#"> Dawid @ Tararuj .be</a> </div>
                                 </div>
 
                                 <div className="row">
-                                    <div className="col"> <i class="fas fa-home"></i>  </div>
+                                    <div className="col"> <i className="fas fa-home"></i>  </div>
                                     <div className="col"> <a href="#"> 1030 Bruxelles</a> </div>
                                 </div>
                                     
                                 <div className="row">
-                                    <div className="col"> <i class="fas fa-laptop"></i>  </div>
+                                    <div className="col"> <i className="fas fa-laptop"></i>  </div>
                                     <div className="col"> <a href="#"> www.dawit.eu</a>    </div>
                                 </div>  
 
                                 <div className="row">
                                     <div className="col center">
-                                    <a href="###"><i class="fab fa-facebook"></i></a>
-                                    <a href="###"><i class="fab fa-instagram"></i></a>
-                                    <a href="###"><i class="fab fa-twitter"></i></a>
-                                    <a href="###"><i class="fab fa-snapchat"></i></a>
+                                    <a href="###"><i className="fab fa-facebook"></i></a>
+                                    <a href="###"><i className="fab fa-instagram"></i></a>
+                                    <a href="###"><i className="fab fa-twitter"></i></a>
+                                    <a href="###"><i className="fab fa-snapchat"></i></a>
                                     </div>
                                 </div>
 
