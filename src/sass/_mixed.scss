@@ -25,8 +25,8 @@ section.content{
     align-items: center;
     justify-content: center;
     border-bottom:2px dashed blue;
+    @media screen and (max-width: 950px){ min-height:120vh; }
     &#contact{
-        min-height: 100vh!important;
         background-color: #0E1428; 
         flex-direction: column;
     }

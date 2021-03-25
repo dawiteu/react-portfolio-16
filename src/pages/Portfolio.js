@@ -15,10 +15,12 @@ const Portfolio = () => {
 
     const darkmode = {
         color: "white",
+        textShadow: "1px 1px 3px #000"
     }
 
     const lightmode = {
-        color: "black"
+        color: "black",
+        textShadow: "1px 2px 12px #000"
     }
 
     const projet = [ 

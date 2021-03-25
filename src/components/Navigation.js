@@ -44,7 +44,7 @@ const Navigation = () => {
                             return ( 
                             <li key={i}> 
                                 {
-                                    <Link to={item.name} isDynamic={true} hashSpy delay={0} offset={-75} spy={true} smooth={true} >{name}</Link>
+                                    <Link to={item.name} isDynamic={true} hashSpy delay={0} offset={-80} spy={true} smooth={true} >{name}</Link>
                                 }
                             </li>);
                         })
