@@ -25,29 +25,58 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="col f-2">
-                            <div className="row">
-                                <div className="col">
-                                    11
+
+                                <div className="row">
+                                    <div className="col"> <i class="fas fa-phone-alt"></i></div>
+                                    <div className="col"> <a href="#">0484 11 22 33</a> </div>
                                 </div>
-                                <div className="col">
-                                    22
+
+                                <div className="row">
+                                    <div className="col"> <i class="fas fa-at"></i> </div>
+                                    <div className="col"> <a href="#"> Dawid @ Tararuj .be</a> </div>
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    33
+
+                                <div className="row">
+                                    <div className="col"> <i class="fas fa-home"></i>  </div>
+                                    <div className="col"> <a href="#"> 1030 Bruxelles</a> </div>
                                 </div>
-                                <div className="col">
-                                    44
+                                    
+                                <div className="row">
+                                    <div className="col"> <i class="fas fa-laptop"></i>  </div>
+                                    <div className="col"> <a href="#"> www.dawit.eu</a>    </div>
+                                </div>  
+
+                                <div className="row">
+                                    <div className="col center">
+                                    <a href="###"><i class="fab fa-facebook"></i></a>
+                                    <a href="###"><i class="fab fa-instagram"></i></a>
+                                    <a href="###"><i class="fab fa-twitter"></i></a>
+                                    <a href="###"><i class="fab fa-snapchat"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <a href="#">TEL: 0484 11 22 33</a> 
-                            <a href="#">@: Dawid @ Tararuj .be</a> 
-                            <a href="#">Adress: 1030 Bruxelles</a> 
-                            <a href="#">WWW: www.dawit.eu</a> 
+
                         </div>
                         <div className="col f-4">
-                        
+                            <form method="post" action="" onSubmit={(e) => {alert('erreur..');e.preventDefault() }}>
+                                <div className="row">
+                                    <div className="col f-2">
+                                            <label for="nom">Nom: </label>  <input type="text" name="nom" />
+
+                                            <label for="prenom">Prénom: </label> <input type="text" name="prenom" />
+
+                                            <label for="subject">Sujet: </label> <input type="text" name="prenom" />
+                                    </div>
+
+                                    <div className="col f-4">
+                                        <label for="message">Message:</label>
+                                        <textarea col="200%"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <input type="submit" className="submit" value="Envoyer >> " />
+
+                            </form>
                         </div>
                     </div>                   
                 </div>

@@ -1,20 +1,72 @@
 #contact{
     div.cont{
         div.row{
-            border:2px dashed pink;
+            // border:2px dashed pink;
             display:flex;
             flex-wrap: nowrap;
-            
             .col{
                 width:100%;
+                margin:2px;
+                &.f-col{ display:flex; flex-direction: column; }
                 &.f-1{
                     flex:1;
                 }
                 &.f-2{
                     flex:2;
+                    align-self: center;
+                    .row{
+                        .col{
+                            &:not(:last-child){
+                                width:60%;
+                                text-align: right;
+                                line-height:150%;
+                            }
+                            
+                            a{
+                                text-decoration:none;
+                                color:white;
+                                &:hover{ 
+                                    color:#ccc;
+                                    text-shadow:1px 1px 2px #000;
+                                }
+                            }
+
+                        }
+                        &:last-child{
+                            a{
+                                i{
+                                    padding:10px;
+                                }
+                                color: #000;
+                                &:hover{ color :lightblue; }
+                            }
+                        }
+                    }
+                    
                 }
                 &.f-4{
                     flex:4;
+                    background-color: orange;
+
+                    .row{
+                        margin:2%;
+                        
+                        label, input, textarea{
+                            width:100%;
+                        }
+
+                        textarea{
+                            height:85%;
+                            resize: none;
+                        }
+                        
+                    }
+                    form{
+                        .submit{
+                            float:right;
+                            margin-right:2%;
+                        }
+                    }
                 }
                 div.project{
                     width:auto; 
@@ -56,7 +108,6 @@
                         z-index:1;
                     }
                     &:hover{
-                        border:1px solid #2d2d2d;
                         img{
                             // transform: scale(1.2);
                             filter: blur(1px);
