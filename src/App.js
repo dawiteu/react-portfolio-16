@@ -10,11 +10,19 @@ import Navigation from './components/Navigation';
 import About from './pages/About';
 import Skills from './pages/Skills'; 
 import Portfolio from './pages/Portfolio'; 
-import Smedia from './pages/Smedia'; 
+import Footer from './components/Footer'; 
 import Contact from './pages/Contact'; 
 
 const App = () => {
 
+  const footer = () => {
+
+    return ( 
+      <footer>
+          Copyright &copy; dawit.eu
+      </footer>
+    );
+  }
   const compIndex = () =>{ 
       return (
         <Fragment>
@@ -40,6 +48,7 @@ const App = () => {
             <Route exact path="/contact" component={Contact} />
         </Switch>
       </Router>
+      <Footer />
     </Fragment>
   );
 };

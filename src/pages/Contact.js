@@ -69,7 +69,7 @@ const Contact = () => {
 
                                     <div className="col f-4">
                                         <label for="message">Message:</label>
-                                        <textarea col="200%"></textarea>
+                                        <textarea></textarea>
                                     </div>
 
                                 </div>
@@ -80,7 +80,6 @@ const Contact = () => {
                         </div>
                     </div>                   
                 </div>
-            <a onClick={scrollToTop}>To the top!</a>
         </section>
     );
 };

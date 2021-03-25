@@ -24,7 +24,7 @@ section.content{
     display:flex;
     align-items: center;
     justify-content: center;
-    border-bottom:2px dashed blue;
+    // border-bottom:2px dashed blue;
     @media screen and (max-width: 950px){ min-height:120vh; }
     &#contact{
         background-color: #0E1428; 
@@ -34,7 +34,7 @@ section.content{
         width:85%;
         min-height:40vh;
         display:flex;
-        background-color: red;
+        // background-color: red;
         flex-direction: column;
         margin:2%;
     }
