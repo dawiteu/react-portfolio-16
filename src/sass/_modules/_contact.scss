@@ -1,166 +1,134 @@
 #contact{
-    color:#ccc;
-    text-shadow:1px 2px 3px #000;
-    div.cont{
-        div.row{
+    .cont{
+        color:white;
+        >.row{
             display:flex;
-            flex-wrap: nowrap;
-            div.project{
-                width:auto; 
-                max-height:500px;
-                position:relative;
-                overflow: hidden;
-                .desc{
-                    width:70%;
-                    position:absolute; 
-                    z-index:2;
-                    top:50%;
-                    left:50%;
-                    transform: translate(-50%,-50%);
-                    text-align:center;
-                    text-shadow:1px 1px 3px #000;
-                    display:flex;
-                    justify-content: center;
-                    
-                    button{
-                        padding:10px; 
-                        background: none;
-                        border:1px solid white;
-                        color:white;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        &:hover{
-                            background-color: #ccc;
-                            text-shadow:1px 2px 4px #000;
-                        }
-                    }
-                }
-                
-                img{
-                    width:100%;
-                    max-width:100%; 
-                    height:100%; 
-                    transition: all .5s;
-                    z-index:1;
-                }
-                &:hover{
-                    img{
-                        filter: blur(1px);
-                    }
-                    .desc{
-                        button{
-                            cursor:pointer;
-                        }
-                    }
-                }
-            }
             .col{
                 width:100%;
-                margin:2px;
-                &.f-col{ display:flex; flex-direction: column; }
-                &.f-1{ flex:1;   }
-                &.f-2{
-                    flex:1.3;
-                    .row{
-                        padding:2%;
-                        // background-color: pink;
-                        .col{
-                            padding:2%;
-                            &:not(:last-child){
-                                width:60%;
-                                text-align: right;
-                                line-height:150%;
-                            }
-                            
-                            a{
-                                text-decoration:none;
+                &.f-1{
+                    flex:1;
+                    div.project{
+                        width:auto;
+                        position:relative;
+                        overflow: hidden;
+                        .desc{
+                            position:absolute;
+                            z-index:2;
+                            top:50%;
+                            left:50%;
+                            transform: translate(-50%,-50%);
+                            text-align: center;
+                            text-shadow: 1px 1px 3px #000;
+                            button{
+                                padding:5px;
+                                background:none;
                                 color:white;
-                                &:hover{ 
-                                    color:#ccc;
-                                    text-shadow:1px 1px 2px #000;
+                                border:1px solid white;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                transition: background-color .4s, opacity .2s;
+                                opacity:0;
+                                &:hover{
+                                    cursor:pointer;
+                                    background-color: #ccc;
+                                    text-shadow:1px 1px 5px black;
                                 }
                             }
-
                         }
-                        &:last-child{
-                            a{
-                                i{
-                                    padding:10px;
+                        img{
+                                width:auto;
+                                max-width:100%;
+                                height:auto;
+                                min-height:100%;
+                                transition: all .2s;
+                                z-index:1;
+                        }
+                        &:hover{
+                            img{
+                                filter: blur(1px);
+                            }
+                            .desc{
+                                button{
+                                    opacity:1;
+                                    cursor:pointer;
                                 }
-                                color: #2d2d2d;
-                                &:hover{ color :lightblue; }
+                            }
+                        }
+                    }
+                }
+                &.f-2{
+                    flex:1.5;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .iconinfo{
+                        width:90%;
+                        margin-top:5px; 
+                        i{
+                            margin:3px;
+                            color:#f0f0f0;
+                        }
+                        a{
+                            color:white;
+                            text-decoration:none;
+                            &:hover{
+                                color:limegreen;
+                            }
+                        }
+                    }
+                }
+                &.f-4{
+                    flex:3;
+                    form{
+                        //display:flex;
+                        justify-content: center;
+                        height:100%;
+                        .col{
+                            display:flex;
+                            justify-content: space-between;
+                            input{
+                                width:100%;
+                            }
+                            &:nth-child(2){
+                                margin-top:2%;
+                                min-height:70%;
+                                .forminfo{
+                                    width:100%;
+                                    display:flex;
+                                    flex-direction: column;                      
+                                    textarea{
+                                        width:100%;
+                                        height:60%;
+                                        resize: none;
+                                    }
+                                }
                             }
                         }
                     }
                     
                 }
-                &.f-4{
-                    flex:4;
-                    .row{
-                        margin:2%;
-                        
-                        label, input, textarea{
-                            width:100%;
-                        }
-
-                        textarea{
-                            height:85%;
-                            resize: none;
-                        }
-                        
-                    }
-                    form{
-                        .submit{
-                            float:right;
-                            margin-right:2%;
-                        }
-                    }
-                }
             }
-        }        
+        }
     }
-
 }
 
 @media screen and (max-width: 950px){
     #contact{
-        div.cont{
-            div.row{
-                display:flex;
-                flex-wrap: wrap;
-                div.col{
-                    display:flex;
-                    flex-wrap: wrap;
+        .cont{
+            >.row{
+                flex-wrap:wrap;
+                .col{
+                    flex:0 1 auto!important;
                     &.f-1{
-                        flex:0 1 auto !important;
                         width:50%;
-                        flex:1;
-                        .project{
-                            width:100%;
-                        }
                     }
                     &.f-2{
-                        flex:1;
+                        width:50%;
+                        font-size:1.1rem;
                     }
                     &.f-4{
-                        flex:4;
-                        flex: 0 1 auto!important;
-                    }
-                    >.row{
                         width:100%;
-                        background-color: pink;
-                        flex:0 1 auto !important;
-                        display:flex;
-                        flex-wrap: nowrap;
-                        .col{
-                            &:first-child{
-                                width:max-content;
-                                background: #000;
-                            }
-                            &:last-child{
-                                background-color: green;
-                            }
-                        }
                     }
                 }
             }

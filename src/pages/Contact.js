@@ -6,12 +6,13 @@ const Contact = () => {
 
     return (
         <section className="content" id="contact">
+            <h2 className="title white">Contact</h2>
             <div className="cont">
                 <div className="row">
                         <div className="col f-1">
                             <div className="project">
                                     <div className="desc">
-                                        <button>Voir</button>
+                                        <button>Voir le CV </button>
                                         <button>Télécharger</button>
                                     </div>
                                 <img src={photocv} alt="photo" />
@@ -19,58 +20,71 @@ const Contact = () => {
                         </div>
                         
                         <div className="col f-2">
+                            <div className="iconinfo">
+                                <i className="fas fa-phone-alt"></i> <a href="###" className="tel">0484 11 22 33</a>
+                            </div>
 
-                                <div className="row">
-                                    <div className="col"> <i className="fas fa-phone-alt"></i></div>
-                                    <div className="col"> <a href="#">0484 11 22 33</a> </div>
-                                </div>
+                            <div className="iconinfo">
+                                <i className="fas fa-at"></i> <a href="###"> Dawid @ Tararuj .be</a> 
+                            </div>
 
-                                <div className="row">
-                                    <div className="col"> <i className="fas fa-at"></i> </div>
-                                    <div className="col"> <a href="#"> Dawid @ Tararuj .be</a> </div>
-                                </div>
+                            <div className="iconinfo">
+                                <i className="fas fa-home"></i> <a href="###"> 1030 Bruxelles</a>
+                            </div>
 
-                                <div className="row">
-                                    <div className="col"> <i className="fas fa-home"></i>  </div>
-                                    <div className="col"> <a href="#"> 1030 Bruxelles</a> </div>
-                                </div>
-                                    
-                                <div className="row">
-                                    <div className="col"> <i className="fas fa-laptop"></i>  </div>
-                                    <div className="col"> <a href="#"> www.dawit.eu</a>    </div>
-                                </div>  
+                            <div className="iconinfo">
+                                <i className="fas fa-laptop"></i><a href="###"> www.dawit.eu</a> 
+                            </div>
 
-                                <div className="row">
-                                    <div className="col center">
-                                    <a href="###"><i className="fab fa-facebook"></i></a>
-                                    <a href="###"><i className="fab fa-instagram"></i></a>
-                                    <a href="###"><i className="fab fa-twitter"></i></a>
-                                    <a href="###"><i className="fab fa-snapchat"></i></a>
-                                    </div>
-                                </div>
+                            <div className="iconinfo">
+                                <i className="fab fa-google"></i><a href="###"> /dawiteu</a> 
+                            </div>
+
+                            <div className="iconinfo">
+                                <i className="fab fa-snapchat"></i><a href="###"> /dawiteu</a> 
+                            </div>
+
+                            <div className="iconinfo">
+                                <i className="fab fa-instagram"></i><a href="###"> /dawiteu</a> 
+                            </div>
+
+                            <div className="iconinfo">
+                                <i className="fab fa-twitter"></i><a href="###"> /dawiteu</a> 
+                            </div>
 
                         </div>
                         <div className="col f-4">
                             <form method="post" action="" onSubmit={(e) => {alert('erreur..');e.preventDefault() }}>
-                                <div className="row">
-                                    <div className="col f-2">
-                                            <label for="nom">Nom: </label>  <input type="text" name="nom" />
-
-                                            <label for="prenom">Prénom: </label> <input type="text" name="prenom" />
-
-                                            <label for="subject">Sujet: </label> <input type="text" name="prenom" />
+                                <div className="col">
+                                    <div className="forminfo">
+                                        <label for="nom">Nom: </label>  <input type="text" name="nom" />
                                     </div>
 
-                                    <div className="col f-4">
-                                        <label for="message">Message:</label>
-                                        <textarea></textarea>
+                                    <div className="forminfo">
+                                        <label for="prenom">Prénom: </label> <input type="text" name="prenom" />
+                                    </div>
+
+                                    <div className="forminfo">
+                                    <label for="subject">Sujet: </label> <input type="text" name="prenom" />
                                     </div>
 
                                 </div>
 
-                                <input type="submit" className="submit" value="Envoyer >> " />
+                                <div className="col">
 
-                            </form>
+                                    <div className="forminfo">
+                                        <label for="message">Message:</label>
+                                        <textarea></textarea>    
+                                    </div>
+
+                                </div>
+
+                                <div className="col">
+                                    <input type="submit" className="submit" value="Envoyer >> " />
+  
+                                </div>
+        
+                            </form>                    
                         </div>
                     </div>                   
                 </div>
