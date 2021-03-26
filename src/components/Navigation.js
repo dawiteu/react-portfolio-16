@@ -16,10 +16,6 @@ const Navigation = () => {
         }
     }
 
-    const checkLink = (e) => {
-        console.log(e.target.innerHTML); 
-        //scroll.scrollMore(100); // onClick={() => window.location.replace("/#about") } // 
-    }
 
     const links = [ 
         {name: "about"}, 
@@ -39,12 +35,10 @@ const Navigation = () => {
                 <Router>
                     { 
                         links.map((item, i) => { 
-                            let name = item.name;
-                            item.exterior ? name = name.substring(1) : name = name;
                             return ( 
                             <li key={i}> 
                                 {
-                                    <Link to={item.name} isDynamic={true} hashSpy delay={0} offset={-80} spy={true} smooth={true} >{name}</Link>
+                                    <Link to={item.name} isDynamic={true} hashSpy delay={0} offset={-80} spy={true} smooth={true} >{item.name}</Link>
                                 }
                             </li>);
                         })

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 //import ReactPageScroller from 'react-page-scroller';
 
@@ -15,14 +15,6 @@ import Contact from './pages/Contact';
 
 const App = () => {
 
-  const footer = () => {
-
-    return ( 
-      <footer>
-          Copyright &copy; dawit.eu
-      </footer>
-    );
-  }
   const compIndex = () =>{ 
       return (
         <Fragment>
@@ -33,10 +25,6 @@ const App = () => {
         </Fragment>
       );
   }
-
-  useEffect(() => {
-    console.log('page');
-  }, []);
 
   return (
     <Fragment>

@@ -5,13 +5,14 @@ var scroll = Scroll.animateScroll;
 
 const Footer = () => {
 
-    const scrollToTop = () => {
+    const scrollToTop = (e) => {
+        e.preventDefault();
         scroll.scrollToTop();
     }
 
     return (
         <footer>
-            <a onClick={scrollToTop} className="totop"><i className="fas fa-arrow-up"></i></a>
+            <a href="###" onClick={(e) => scrollToTop(e)} className="totop"><i className="fas fa-arrow-up"></i></a>
             <p>Copyright &copy; dawiteu</p>  
         </footer>
     );

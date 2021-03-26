@@ -15,7 +15,7 @@ const Contact = () => {
                                         <button>Voir le CV </button>
                                         <button>Télécharger</button>
                                     </div>
-                                <img src={photocv} alt="photo" />
+                                <img src={photocv} alt="dawid le bg pour cv " />
                             </div>
                         </div>
                         
@@ -57,15 +57,15 @@ const Contact = () => {
                             <form method="post" action="" onSubmit={(e) => {alert('erreur..');e.preventDefault() }}>
                                 <div className="col">
                                     <div className="forminfo">
-                                        <label for="nom">Nom: </label>  <input type="text" name="nom" />
+                                        <label htmlFor="nom">Nom: </label>  <input type="text" name="nom" />
                                     </div>
 
                                     <div className="forminfo">
-                                        <label for="prenom">Prénom: </label> <input type="text" name="prenom" />
+                                        <label htmlFor="prenom">Prénom: </label> <input type="text" name="prenom" />
                                     </div>
 
                                     <div className="forminfo">
-                                    <label for="subject">Sujet: </label> <input type="text" name="prenom" />
+                                    <label htmlFor="subject">Sujet: </label> <input type="text" name="prenom" />
                                     </div>
 
                                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 <div className="col">
 
                                     <div className="forminfo">
-                                        <label for="message">Message:</label>
+                                        <label htmlFor="message">Message:</label>
                                         <textarea></textarea>    
                                     </div>
 
